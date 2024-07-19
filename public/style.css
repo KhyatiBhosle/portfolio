@@ -1,0 +1,320 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#b2bcbb, #e4dccf);
+    filter: brightness(110%);
+    font-weight: 300;
+}
+.row{
+    margin: 0;
+    padding: 5vh 15vw;
+}
+
+h1, h3, h4, .navbar-brand{
+    font-family: "Playwrite IT Moderna", cursive;
+    color: #1E3C4E;
+    font-weight: 200;
+}
+
+.hr{
+    margin: 0vh 15vw;
+}
+/*-----------------------------------------------------------NAVBAR--------------------------------------------------------------------*/
+.navbar{
+    padding: 1vh 15vw;
+}
+.nav-item{
+    padding-left: 20px;
+}
+
+.nav-item .link{
+    color: #1E3C4E;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------HEADER--------------------------------------------------------------------*/
+#header{
+    min-height: 90vh;
+    padding: 0 15vw;
+}
+#header .mobile{
+    display: none;
+}
+#header img{
+    height: 40vh;
+    border-radius: 2px;
+}
+
+#header .intro{
+    text-align: right;
+    color: #1E3C4E;
+}
+
+#header .intro span{
+    color: #8E675B;
+    font-size: small;
+}
+
+#header .more{
+    max-width: 70vw;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+   
+}
+
+#header .more .link{
+    color: #8E675B;
+    font-size: small;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------SKILLS--------------------------------------------------------------------*/
+
+#skills{
+    text-align: center;
+    text-align: center;
+}
+
+#skills .col-4 div{
+    background-color:  #b2bcbb;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 7px 15px;
+}
+
+#skills h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #22404a; 
+}
+/*-----------------------------------------------------------PROJECT-------------------------------------------------------------------*/
+
+#projects{
+    text-align: center;
+    width: 100vw;
+}
+#projects h3, #skills h3{
+    font-size:x-large;
+    margin-bottom: 30px;
+}
+#projects video{
+    height: auto;
+    max-width: 100%;
+    filter: brightness(85%);
+    border-radius: 5px;
+}
+
+.eachProject{
+    position: relative;
+}
+
+.eachProject h4{
+    color: #e4dccf;
+    font-size: medium;
+}
+
+#projects .hoverEffect{
+    background-color: transparent;
+    text-align: justify;    
+    color: #e4dccf;
+    flex-direction:column;
+    justify-content:flex-end;
+    font-size:small;
+    padding:10px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    display: flex;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+#projects .link{
+    color: #e4dccf;
+}
+
+.eachProject:hover > .hoverEffect{
+    background-color: rgba(28, 50, 64, 0.8) !important; 
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+#projects .btn, #footer .btn{
+    background-color: transparent;
+    text-decoration: underline;
+    color:#22404a;
+    border: 1px #22404a solid;
+}
+
+#projects .btn:hover, #footer .btn:hover{
+    border-radius: 0px;
+}
+/*-----------------------------------------------------------FOOTER--------------------------------------------------------------------*/
+
+#footer{
+    text-align: center;
+    padding: 5vh 15vw 10vh 15vw;
+}
+
+#footer .col{
+    text-align: left;
+}
+
+#footer .col .row{
+    padding: 0;
+}
+
+#footer .col .row .col{
+    border-radius: 2px;
+    background-color: rgba(142, 103, 91, 0.3);
+    margin: 10px;
+    padding: 30px 20px;
+    text-align: center;
+}
+#footer .link{
+    color: #172D3B;
+    text-decoration: none;
+}
+
+#footer i{
+    font-size: x-large;
+}
+
+#footer p i{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+#project{
+    padding: 5vh 15vw 5vh 15vw;
+    text-align: justify;
+    font-size: 15px;
+}
+#project .row {
+    margin: 0;
+    padding: 5vh 0;
+}
+#project .row .col-6{
+    text-align: justify;
+}
+
+#project hr{
+    margin: 0;
+}
+#project li{
+    display: inline-block;
+    margin: 5px;
+    font-size: small;
+}
+#project .link{
+    margin: 5px;
+    background-color: #172D3B;
+    padding: 10px;
+    color:#e4dccf;
+    text-decoration: none;
+    border-radius: 2px;
+}
+#project video{
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    border: solid 1px #172D3B;
+
+}
+.webframe{
+    width: 100%;
+}
+
+.description .col-6{
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.description .col-6:nth-child(odd){
+    padding-right: 20px;
+}
+
+.description .col-6:nth-child(even){
+    padding-left: 20px;
+}
+/*-----------------------------------------------------------PROJECT-------------------------------------------------------------------*/
+.allProjects{
+    padding: 5vh 15vw 0vh 15vw; 
+}
+.allProjects video{
+    width: 100%;
+    border: none
+}
+.allProjects hr{
+    padding: 0;
+    margin: 0;
+}
+.allProjects .row{
+    margin: 0;
+    padding: 0
+}
+
+/*-----------------------------------------------------------PROJECT-------------------------------------------------------------------*/
+
+#about{
+    padding: 5vh 15vw 0vh 15vw; 
+}
+#about h4{
+    font-size: 15px;
+}
+#about .section{
+    border-left: solid 1px #172D3B;
+    padding-left: 20px;
+}
+#about .section p span.duration{
+    position: relative;
+    right: 27px;
+}
+#about .section p span.duration::before{
+    content: "•     ";
+    font-size: 30px;
+}
+
+#about .section p span.place{
+    font-weight: 500;
+}
+
+/*-----------------------------------------------------------MOBILE-------------------------------------------------------------------*/
+
+@media (max-width: 850px) or (orientation: portrait){
+    #header{
+        min-height: 90vh;
+        padding: 5vh auto;
+    }
+    #header .intro, .col-6, .col-4{
+        display: block;
+        text-align: center;
+        width: 100vw;
+    }
+
+    #header .intro p{
+        text-align: justify;
+    }
+    #header .laptop{
+        display: none;
+    }
+    #header .mobile{
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+    #header .more{
+        display: none;
+    }
+
+    #footer .col .row .col{
+        margin: 10px 0px;
+        padding: 15px 10px;
+    }
+}
